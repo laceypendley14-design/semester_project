@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Digital humanities research project exploring [your topic]">
-    <meta name="author" content="Lacey Pendley">
-    <title>Public Opinion on Film Adaptations  | WRIT 20833</title>
+    <meta name="author" content="Lacey Pendley ">
+    <title>Novels Verus Film Adaptations  | WRIT 20833</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,18 +20,18 @@
     </nav>
 
     <header>
-        <h1>Your Project Title</h1>
-        <p>Your Name | WRIT 20833 | Fall 2025</p>
+        <h1>Novels Versus Film Adaptations</h1>
+        <p>Lacey Pendley | WRIT 20833 | Fall 2025</p>
     </header>
 
     <main>
         <section id="question">
             <h2>Research Question</h2>
-            <!-- TODO: Add your research question here -->
-            <p>What patterns emerge when we analyze [your cultural phenomenon] using computational text analysis methods?</p>
-
-            <p><strong>Background:</strong> Explain why this question matters and what motivated your research.</p>
             
+
+            <p>How do fans’ preferences and opinions vary between The Hunger Games books and their movie adaptations in terms of storytelling, character development and emotional impact? What do these differences tell us about how film adaptations of novels influence cultural perception? </p>
+
+            <p><strong>Background:</strong> As an avid reader I am always anticipating film adaptations of my favorite novels. However, not all of these movies live up to my expectations. In fact some adaptations vary so significantly from the original book that it can ruin the overall experience of the story. I believe that these differences in opinions between books and their movies can reveal interesting truths about what consumers view as enjoyable and important when reviewing a piece of content. By understanding the necessities for creating a successful movie adaptation according to the viewers, movie producers and directors can learn and adapt to reflect public opinion, since it is these viewers that ultimately pay their salaries. 
         </section>
 
 
@@ -40,17 +40,17 @@
 
             <h3>Dataset</h3>
             <!-- TODO: Describe your data collection and methodology -->
-            <p><strong>Data Source:</strong> [Where did you collect your data?]</p>
-            <p><strong>Collection Method:</strong> [How did you gather the data? Instant Data Scraper? API? Manual collection?]</p>
-            <p><strong>Dataset Size:</strong> [Number of items, date range, etc.]</p>
-            <p><strong>Ethical Considerations:</strong> [How did you protect privacy? What ethical decisions did you make?]</p>
+            <p><strong>Data Source:</strong> The first step after establishing a research question and developing a hypothesis is collecting enough useful data to successfully complete analysis methods on. I decided to gather data from both The Hunger Games and its sequel Catching Fire. Using data scraping methods, I collected information from Amazon, Goodreads, Rotten Tomatoes, and IMDB for a total of eight data sets. I felt that it was important to use two data sets for each piece of content in an attempt to gather all possible opinions on the piece with as little biases as possible.</p>
+            <p><strong>Collection Method:</strong> I collected all of my data using the Instant Data Scraper extension. I felt that this was the easiest and most efficient way to collect large data sets such as the ones I used for the completion of this project. </p>
+            <p><strong>Dataset Size:</strong> I used a total of eight data sets for the completion of this project. Each data set was unique in length, ranging from as small as thirty reviews to up to one hundred data entries. The dates on these sets also vary, as each set included reviews beginning at the time of the literary piece's release all the way to present day. </p>
+            <p><strong>Ethical Considerations:</strong> Ethical management of data collection is always important when conducting research. It is important that all information used is sourced ethically and gives credit to the original creator. For my project, the considerations that I took into account was attributing credit for all data sets to the respective website where I scraped the information from. This is important since I, myself did not create these data sets and therefore I cannot take credit for doing so. In research it is also important that nobody is facing any ramifications from the results of your project. Since my project deals with reviews posted online, all information is already avaliable to the general public and therefore is ethical to use for this research project.  </p>
 
             <h3>Analysis Methods</h3>
             <p><strong>Tools:</strong> Python (pandas, VADER, Gensim)</p>
             <ul>
-                <li><strong>Term Frequency Analysis:</strong> [Brief description of how you used this method]</li>
-                <li><strong>Sentiment Analysis (VADER):</strong> [What sentiment patterns did you look for?]</li>
-                <li><strong>Topic Modeling (Gensim LDA):</strong> [How many topics? What did you discover?]</li>
+                <li><strong>Term Frequency Analysis:</strong> The first computational method I used was word frequency analysis. I decided that computing the most frequently used words would be important in understanding what reviewers were saying about the particular piece. I predicted that character names and key plot points would show up the most frequently as they are most recognized and criticized.</li>
+                <li><strong>Sentiment Analysis (VADER):</strong> The next computational method that I conducted was sentiment analysis. Sentiment analysis gives an overview of the tone of the data set using key words that it deems either positive or negative. Since this series is very highly rated across numerous platforms, I predicted that the overall sentiment analysis would be positive. I did think that the book reviews would be slightly higher than the movies as expressed in my research hypothesis.</li>
+                <li><strong>Topic Modeling (Gensim LDA):</strong> The last method I chose to include was topic modeling. Topic modeling is important because it gives general ideas or topics that are expressed the most throughout the reviews. By understanding which topics are the most prevalent, I can discover what elements are important to consumers and how these topics are influencing their opinion of the content. Similarly to word frequency, I predicted that topic modeling would reveal most ideas being centered around the characters in the story or big pieces of the plot. For each of my data sets I chose to compute five topics. I felt that five was the best number as it allowed for variety to show up without running into the risk of overly repetitive topics. </li>
             </ul>
         </section>
 
