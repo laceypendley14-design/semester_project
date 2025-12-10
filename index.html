@@ -57,7 +57,8 @@
         <section id="analysis">
             <h2>Results & Analysis</h2>
             <!-- TODO: Add visualizations and code snippets -->
-
+             <img src="images/sentiment-distribution.png"
+     alt="Bar chart showing sentiment distribution">
             <h3>Sentiment Analysis Results</h3>
             <p> Sentiment score analysis results varied differently from what I had originally expected. My prediction was that sentiment scores would be incredibly high for all of these data sets as the reviews for these novels and movies are relatively positive across the board. However, during computations I kept receiving moderate to neutral overall sentiment score ratings. I was very surprised when my results were ranging anywhere from 0.3 to 0.6. While these scores are not drastically low and do lean more on the positive side, I was confused because after scanning over the data sets by hand, I was not seeing a significant enough amount of negative reviews to justify such a low score. What I discovered was that the VADAR computational method was misinterpreting words from the reviews and labeling them as negative when in reality they were just describing parts of the story. Words such as “hunger” and “fighting” were being interpreted as negative even if the review was praising the piece. This flaw was causing high-rating reviews to earn negative sentiment scores, ultimately dragging down the average sentiment score of the whole piece. Things like this are important to recognize and address as they can alter the entirety of your research.  This mistake also showcases the need for human analysis in addition to computational analysis as there are just some things that computers can’t understand such as the use of sarcasm and connotations of certain words.</p>
 
