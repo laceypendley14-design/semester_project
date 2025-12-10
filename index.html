@@ -59,7 +59,7 @@
             <!-- TODO: Add visualizations and code snippets -->
 
             <h3>Sentiment Analysis Results</h3>
-            <p>Using VADER sentiment analysis, I examined [describe what you analyzed]...</p>
+            <p> Sentiment score analysis results varied differently from what I had originally expected. My prediction was that sentiment scores would be incredibly high for all of these data sets as the reviews for these novels and movies are relatively positive across the board. However, during computations I kept receiving moderate to neutral overall sentiment score ratings. I was very surprised when my results were ranging anywhere from 0.3 to 0.6. While these scores are not drastically low and do lean more on the positive side, I was confused because after scanning over the data sets by hand, I was not seeing a significant enough amount of negative reviews to justify such a low score. What I discovered was that the VADAR computational method was misinterpreting words from the reviews and labeling them as negative when in reality they were just describing parts of the story. Words such as “hunger” and “fighting” were being interpreted as negative even if the review was praising the piece. This flaw was causing high-rating reviews to earn negative sentiment scores, ultimately dragging down the average sentiment score of the whole piece. Things like this are important to recognize and address as they can alter the entirety of your research.  This mistake also showcases the need for human analysis in addition to computational analysis as there are just some things that computers can’t understand such as the use of sarcasm and connotations of certain words.</p>
 
             <!-- Single visualization with caption -->
             <figure class="viz-container">
@@ -121,6 +121,7 @@ df['sentiment'] = df['compound'].apply(
 
             <h3>Detailed Results</h3>
             <p>Breaking down the sentiment distribution:</p>
+            <p>This is the sentiment anaylsis breakdown for The Hunger Games novel (one out of eight data sets).</p>
 
             <table class="results-table">
                 <thead>
@@ -154,7 +155,7 @@ df['sentiment'] = df['compound'].apply(
             </table>
 
             <h3>What Surprised Me</h3>
-            <p>I initially predicted that [your assumption], but the data revealed [what actually happened]. This challenged my understanding because...</p>
+            <p></p>  My original hypothesis was that I predicted The Hunger Games novels to receive more support and appreciation than the film adaptations. However, I do not think there was enough data-driven evidence to support this claim. Instead I argue that the films and novels were equally loved by fans for much of the same reasons. No data analysis method revealed that fans were left missing things or longing for more from the movies. My original hypothesis was not completely correct however I do think there are some reasonable explanations for this. One of my guesses is that the audiences reviewing the book were different from the audiences reviewing the movies. Therefore they were not comparing one to the other, instead they were just taking the piece as is.
         </section>
 
         <section id="reflection">
@@ -164,33 +165,37 @@ df['sentiment'] = df['compound'].apply(
             <p>This project demonstrates what happens when coding meets culture by revealing insights that neither computational analysis nor traditional close reading could discover alone.</p>
 
             <h3>Integration of Methods</h3>
-            <p><strong>What computational methods revealed:</strong> [Describe patterns only visible through large-scale analysis]</p>
-            <p><strong>What close reading added:</strong> [Describe how interpretive work enriched the computational findings]</p>
+            <p><strong>What computational methods revealed:</strong>  In the specific case of my project, computational analysis revealed how similar the reviews were between all of the data sets. Upon first glance, each of the reviews may have seemed unique and different. However, topic modeling revealed that the majority of these reviews revolved around the same central themes, showcases how similar each data set really was. This might have been missed if close reading was used alone, as it is easy to ignore the data from other sets and instead zero in on one specific thing at a time</p>
+            <p><strong>What close reading added:</strong> Computers are extremely useful tools when conducting research. However at the end of the day it is just a machine that cannot do all of the things humans can. That is why even if we use computational methods of research, it is crucial that we also integrate close reading and review into our final results as well. For my project, the utilization of close reading practices identified the mistakes happening in sentiment analysis conduction due to the computer not being able to understand sarcasm or word connatations. By identifying this mistake, I was able to develop more accurate estimates of the overall tone, or sentiment, of each of the data sets. </p>
 
             <div class="framework-callout">
                 <h3>📐 Classification Logic</h3>
-                <p>This project connects to <strong>Classification Logic</strong> by revealing how algorithmic categorization shapes our understanding of [your topic]. [Explain the connection...]</p>
+                <p>This project connects to <strong>Classification Logic</strong> by revealing how algorithmic categorization shapes our understanding of cultural perceptions of film adaptations. This project engages directly with Classification Logic by examining how algorithmic systems sort, label and organize information about opinions towards popular novel's film adaptations. In doing so, it explains how this information shapes our cultural understandings of these literary pieces through emphasis on certain aspects, such as plot and character development, while disengaging with others. . </p>
 
-                <p><em>Critical question:</em> What nuances are lost when we reduce complex cultural expressions to computational categories?</p>
+                <p><em>Critical question:</em> What nuances are lost when we reduce complex cultural expressions to computational categories?
+            <p></p>When complex cultural works are reduced to computational categories, we lose the messy, controdictory, culturally charged richness that makes interpreation not only possible but meaningful as well. What is left over is a simplified version, useful for basic descrpitions, but incapable of truly representing the full landscape that is the piece. </p>
             </div>
 
             <div class="framework-callout">
                 <h3>🤖 AI Agency</h3>
-                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. [Explain further...]</p>
+                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. Topic modeling and sentiment anaylsis don't give AI agency, they simply expose how embedded human analysis is in every step of any computational method. These algorithms structure insights in a way the must be reviewed and intepreted constantly by human brains. This integration between technoloy and human power is precisely what this project attempts to showcase. </p>
             </div>
 
             <h3>Limitations & Future Directions</h3>
-            <p><strong>What I would do differently:</strong> [Reflect on your process]</p>
-            <p><strong>Questions that remain:</strong> [What would you investigate with more time?]</p>
-            <p><strong>Confidence in conclusions:</strong> [How certain are you about your findings? What caveats should readers consider?]</p>
+            <p><strong>What I would do differently:</strong> Overall I am very happy with how the process of this project happened. If I could go back and do it again, I think the only thing I would have done differently would be to develop code that would compare results side by side, instead of having to manually compare each data set to one another by hand. By designated one coding notebook to each individual data set, I had to flip back and forth many times in order to make any sort of comparisons between final results. I think it would have been slighly easier if I would have created one coding notebook for multiple data sets so that the information was all in one place and easily accessible for comparisions. </p>
+            <p><strong>Questions that remain:</strong>
+                <p></p> Who are viewers blaming for bad movie adaptaptions? Screenwriters? Directors and Producers? Actors? </p> 
+            <p> Do adadptations do a better job of capturing the essence of a novel when the original author is a part of the film making process?</p>
+            <p><strong>Confidence in conclusions:</strong> I am fairly confident in my results as I have evidence from four different sources backing me up. By comparing numerous data sets in a variety of ways, my insights have developed in a way that is logical and replicable. The major limitation that I had to keep in mind when conducting my analysis, that others should take into consideration as well, is that not every person who has consumed the highlighted content is going to write a review about it. In fact most people are not going to, which means that it may be hard to generalize the information from this research to the entire population. 
+ </p>
         </section>
     </main>
 
     <footer>
         <p>📊 <strong>Project Materials:</strong>
-            <a href="https://github.com/yourusername/project-name">View Google Colab Notebooks & Data on GitHub</a>
+            <a href="https://github.com/laceypendley/novels_verus_filmadaptations">View Google Colab Notebooks & Data on GitHub</a>
         </p>
-        <p>&copy; 2025 Your Name | WRIT 20833: Introduction to Coding in the Humanities</p>
+        <p>&copy; 2025 Lacey Pendley | WRIT 20833: Introduction to Coding in the Humanities</p>
     </footer>
 </body>
 </html>
