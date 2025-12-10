@@ -57,8 +57,7 @@
         <section id="analysis">
             <h2>Results & Analysis</h2>
             <!-- TODO: Add visualizations and code snippets -->
-             <img src="images/sentiment-distribution.png"
-     alt="Bar chart showing sentiment distribution">
+             
             <h3>Sentiment Analysis Results</h3>
             <p> Sentiment score analysis results varied differently from what I had originally expected. My prediction was that sentiment scores would be incredibly high for all of these data sets as the reviews for these novels and movies are relatively positive across the board. However, during computations I kept receiving moderate to neutral overall sentiment score ratings. I was very surprised when my results were ranging anywhere from 0.3 to 0.6. While these scores are not drastically low and do lean more on the positive side, I was confused because after scanning over the data sets by hand, I was not seeing a significant enough amount of negative reviews to justify such a low score. What I discovered was that the VADAR computational method was misinterpreting words from the reviews and labeling them as negative when in reality they were just describing parts of the story. Words such as “hunger” and “fighting” were being interpreted as negative even if the review was praising the piece. This flaw was causing high-rating reviews to earn negative sentiment scores, ultimately dragging down the average sentiment score of the whole piece. Things like this are important to recognize and address as they can alter the entirety of your research.  This mistake also showcases the need for human analysis in addition to computational analysis as there are just some things that computers can’t understand such as the use of sarcasm and connotations of certain words.</p>
 
@@ -192,14 +191,22 @@ df['sentiment'] = df['compound'].apply(
         </section>
 
         <section id="further information">
-            <h2>Critical Reflection</h2>
+            <h2>Further Information</h2>
             <!-- TODO: Connect to course frameworks -->
 
-            <p>This project demonstrates what happens when coding meets culture by revealing insights that neither computational analysis nor traditional close reading could discover alone.</p>
+           
 
-            <h3>Integration of Methods</h3>
-            <p><strong>What computational methods revealed:</strong>  In the specific case of my project, computational analysis revealed how similar the reviews were between all of the data sets. Upon first glance, each of the reviews may have seemed unique and different. However, topic modeling revealed that the majority of these reviews revolved around the same central themes, showcases how similar each data set really was. This might have been missed if close reading was used alone, as it is easy to ignore the data from other sets and instead zero in on one specific thing at a time</p>
-            <p><strong>What close reading added:</strong> Computers are extremely useful tools when conducting research. However at the end of the day it is just a machine that cannot do all of the things humans can. That is why even if we use computational methods of research, it is crucial that we also integrate close reading and review into our final results as well. For my project, the utilization of close reading practices identified the mistakes happening in sentiment analysis conduction due to the computer not being able to understand sarcasm or word connatations. By identifying this mistake, I was able to develop more accurate estimates of the overall tone, or sentiment, of each of the data sets. </p>
+            <h3>Coding Notebooks Access</h3>
+            <p><strong>Coding Notebooks: </strong>  
+                <p>https://colab.research.google.com/drive/10qDcundpZrxfcg-Ghb_rtHOvYVrhokLm?authuser=1#scrollTo=GH3NRpLxlEOl</p> 
+                <p>https://colab.research.google.com/drive/143-yU-vhxEBG7cAqvBv5t-lyZ3kUlghB?authuser=1</p>
+                <p>https://colab.research.google.com/drive/1uxKxdQf-fDvGmCff5pyerK1eKK45SaCA?authuser=1#scrollTo=G-RYpUXCOanT</p>
+                <p>https://colab.research.google.com/drive/1wQKqpPhvg9fSYd6uvV2WMN7Yy3ES9iTS?authuser=1</p>
+                <p>https://colab.research.google.com/drive/1tF65JCZKwLF8zWUBQKXZbnKJo2E0HzDH?authuser=1#scrollTo=uFOvdQ_gcyDu</p>
+                <p>https://colab.research.google.com/drive/11huXl7QuOro06RGtPJut9Mh0WrLfrxoy?authuser=1#scrollTo=i3DFogWMYLsJ</p>
+                <p>https://colab.research.google.com/drive/1ldh1RuDiT2FWeirqUqJVE1PxicmprCBo?authuser=1#scrollTo=uz3faeH43NzG</p>
+                <p>https://colab.research.google.com/drive/1QBs94Esf2maiAb1tG7LpeoV-mRBDeHa2?authuser=1</p>
+            
 
            
  </p>
