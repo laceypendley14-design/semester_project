@@ -66,7 +66,7 @@
             <figure class="viz-container">
                 <img src="images/sentiment-distribution.png"
                      alt="Bar chart showing distribution of positive, negative, and neutral sentiment">
-                <figcaption>Figure 1: Distribution of sentiment scores across dataset</figcaption>
+                <figcaption>Figure 1: Distribution of sentiment scores across The Hunger Games movie reviews from Rotten Tomato. </figcaption>
             </figure>
 
             <h3>Code Example</h3>
@@ -90,20 +90,20 @@ df['sentiment'] = df['compound'].apply(
 )</code></pre>
 
             <h3>Topic Modeling Results</h3>
-            <p>Using Gensim's LDA implementation, I identified [number] major topics...</p>
+            <p>Using Gensim's LDA implementation, I identified 5 major topics...</p>
 
             <!-- Multiple visualizations in a grid -->
             <div class="viz-grid">
                 <figure class="viz-container">
-                    <img src="images/topic-model.png"
+                    <img src="images/topic-model-distribution.png"
                          alt="Visualization of topic clusters from LDA analysis">
-                    <figcaption>Figure 2: Topic clusters from LDA analysis</figcaption>
+                    <figcaption>Figure 2: Topic clusters from LDA analysis on Catching Fire reviews from Goodreads.</figcaption>
                 </figure>
 
                 <figure class="viz-container">
                     <img src="images/word-cloud.png"
                          alt="Word cloud showing most frequent terms">
-                    <figcaption>Figure 3: Most common terms in the corpus</figcaption>
+                    <figcaption>Figure 3: Most common terms in the corpus on Catching Fire reviews from IMDF dataset.</figcaption>
                 </figure>
             </div>
         </section>
@@ -188,6 +188,20 @@ df['sentiment'] = df['compound'].apply(
                 <p></p> Who are viewers blaming for bad movie adaptaptions? Screenwriters? Directors and Producers? Actors? </p> 
             <p> Do adadptations do a better job of capturing the essence of a novel when the original author is a part of the film making process?</p>
             <p><strong>Confidence in conclusions:</strong> I am fairly confident in my results as I have evidence from four different sources backing me up. By comparing numerous data sets in a variety of ways, my insights have developed in a way that is logical and replicable. The major limitation that I had to keep in mind when conducting my analysis, that others should take into consideration as well, is that not every person who has consumed the highlighted content is going to write a review about it. In fact most people are not going to, which means that it may be hard to generalize the information from this research to the entire population. 
+ </p>
+        </section>
+
+        <section id="further information">
+            <h2>Critical Reflection</h2>
+            <!-- TODO: Connect to course frameworks -->
+
+            <p>This project demonstrates what happens when coding meets culture by revealing insights that neither computational analysis nor traditional close reading could discover alone.</p>
+
+            <h3>Integration of Methods</h3>
+            <p><strong>What computational methods revealed:</strong>  In the specific case of my project, computational analysis revealed how similar the reviews were between all of the data sets. Upon first glance, each of the reviews may have seemed unique and different. However, topic modeling revealed that the majority of these reviews revolved around the same central themes, showcases how similar each data set really was. This might have been missed if close reading was used alone, as it is easy to ignore the data from other sets and instead zero in on one specific thing at a time</p>
+            <p><strong>What close reading added:</strong> Computers are extremely useful tools when conducting research. However at the end of the day it is just a machine that cannot do all of the things humans can. That is why even if we use computational methods of research, it is crucial that we also integrate close reading and review into our final results as well. For my project, the utilization of close reading practices identified the mistakes happening in sentiment analysis conduction due to the computer not being able to understand sarcasm or word connatations. By identifying this mistake, I was able to develop more accurate estimates of the overall tone, or sentiment, of each of the data sets. </p>
+
+           
  </p>
         </section>
     </main>
